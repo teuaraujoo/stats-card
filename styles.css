@@ -34,7 +34,7 @@ body {
 }
 
 .lado img {
-    width: calc(100% - 80rem); 
+    width: 30rem; 
     height: 30rem;
     border-radius: 0rem 1rem 1rem 0rem;
     z-index: 99;
@@ -42,7 +42,7 @@ body {
 }
 
 .card {
-    width: calc(100% - 80rem); 
+    width: 30rem; 
     height: 30rem;
     display: flex;
     justify-content: center;
