@@ -1,0 +1,119 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 37%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --stats-heading: hsl(0, 0%, 100%);
+    --stat-heading: hsla(0, 0%, 100%, 0.6);
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --font-primary: 'Inter';
+    --font-secundary: 'Lexend Deca';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: var(--main-background);
+}
+
+.lado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 11rem auto;
+}
+
+.lado img {
+    width: calc(100% - 80rem); 
+    height: 30rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    z-index: 99;
+    filter: grayscale(100%) sepia(100%) hue-rotate(235deg) saturate(550%) brightness(75%);
+}
+
+.card {
+    width: calc(100% - 80rem); 
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-background);
+    border-radius: 1rem 0rem 0rem 1rem;
+    z-index: 1;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text span {
+    color: var(--accent);
+}
+
+.card-presentation {
+    width: 21rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: var(--font-primary);
+    color: var(--stats-heading);
+    font-weight: 700;
+    font-size: 2rem;
+    transform: scale(1.2);
+}
+
+.description {
+    font-family: var(--font-secundary);
+    color: var(--paragraph);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    word-spacing: 0.1rem;
+    text-align: left;
+    margin-top: 2rem;
+    transform: scale(1.2);
+}
+
+.stats-card {
+    display: flex;
+    gap: 6rem;
+    margin-top: 6rem;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-container h1 {
+    color: var(--stats-heading);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.stats-container p {
+    color: var(--stat-heading);
+    font-family: var(--font-secundary);
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0.4rem;
+}
